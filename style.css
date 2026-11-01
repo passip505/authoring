@@ -1,5 +1,4 @@
 
-/* My portfolio's colours and basic styling */
 
 body {
     margin: 0;
@@ -8,7 +7,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* The navigation bar at the top */
 
 nav {
     display: flex;
@@ -25,7 +23,6 @@ nav a {
     font-size: 14px;
 }
 
-/* The main introduction */
 
 main {
     padding: 80px 10%;
@@ -47,12 +44,10 @@ p {
     max-width: 550px;
 }
 
-/* Make links feel like buttons when hovered */
 
 a:hover {
     color: #648B42;
 }
-/* Homepage layout */
 .hero {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -113,7 +108,6 @@ a:hover {
     margin-top: 22px;
 }
 
-/* Character and decorative drawings */
 .character-area {
     position: relative;
     min-height: 390px;
@@ -133,7 +127,6 @@ a:hover {
     position: relative;
     z-index: 1;
 
-    /* Blend the white background into the pink shape */
     mix-blend-mode: multiply;
 
     animation: character-float 3s ease-in-out infinite;
@@ -188,7 +181,6 @@ a:hover {
     margin-top: 5px;
 }
 
-/* Introduction to the projects section */
 .work-intro {
     margin-top: 60px;
     padding: 45px 0 20px;
@@ -204,7 +196,6 @@ a:hover {
     color: #62645D;
 }
 
-/* CSS animations: no JavaScript needed */
 @keyframes character-float {
     0%, 100% {
         transform: translateY(0);
@@ -225,7 +216,6 @@ a:hover {
     }
 }
 
-/* Make the layout fit smaller screens */
 @media (max-width: 700px) {
     .hero {
         grid-template-columns: 1fr;
@@ -250,7 +240,6 @@ a:hover {
     }
 }
 
-/* Respect visitors who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
     .character,
     .doodle {
@@ -258,7 +247,6 @@ a:hover {
     }
 }
 
-/* PROJECT SECTIONS */
 
 .projects-section {
     max-width: 1200px;
@@ -292,7 +280,6 @@ a:hover {
     box-shadow: 0 12px 30px rgba(36, 37, 34, 0.08);
 }
 
-/* COLOURFUL PROJECT ARTWORK */
 
 .project-art {
     min-height: 190px;
@@ -381,7 +368,6 @@ a:hover {
     font-weight: 800;
 }
 
-/* PROJECT TEXT */
 
 .project-info {
     padding: 26px;
@@ -424,7 +410,6 @@ a:hover {
     background: #347f3d;
 }
 
-/* MOBILE LAYOUT */
 
 @media (max-width: 700px) {
     .projects-section {
@@ -445,7 +430,6 @@ a:hover {
         min-height: 160px;
     }
 }
-/* Project mockups fill the artwork area */
 
 .project-art {
     height: 250px;
@@ -462,7 +446,6 @@ a:hover {
     object-position: center;
     border-radius: inherit;
 }
-/* Other website pages */
 
 .page-content {
     max-width: 850px;
@@ -481,7 +464,6 @@ a:hover {
     color: #565750;
     margin-bottom: 20px;
 }
-/* About page layout */
 
 .about-layout {
     max-width: 1150px;
@@ -515,7 +497,6 @@ a:hover {
     border-radius: 28px;
 }
 
-/* About page on smaller screens */
 
 @media (max-width: 700px) {
     .about-layout {
@@ -530,7 +511,6 @@ a:hover {
         max-height: 480px;
     }
 }
-/* Contact page layout */
 
 .contact-content {
     max-width: 850px;
@@ -621,7 +601,6 @@ a:hover {
         padding: 20px;
     }
 }
-/* ABOUT PAGE SECTIONS */
 
 .about-section {
     max-width: 1070px;
@@ -642,7 +621,6 @@ a:hover {
     font-size: 17px;
 }
 
-/* EXPERIENCE AND EDUCATION */
 
 .experience-item {
     padding: 24px 0;
@@ -673,7 +651,6 @@ a:hover {
     margin: 12px 0 0;
 }
 
-/* SKILLS */
 
 .skill-list {
     display: flex;
@@ -690,7 +667,6 @@ a:hover {
     font-size: 14px;
 }
 
-/* CV SECTION */
 
 .resume-section {
     max-width: 1000px;
@@ -710,7 +686,6 @@ a:hover {
     font-weight: 700;
 }
 
-/* MOBILE RESPONSIVENESS */
 
 @media (max-width: 700px) {
     .about-section {
@@ -731,21 +706,4 @@ a:hover {
         margin: 45px 20px;
         padding: 24px;
     }
-}
-
-/* Link to the full projects page */
-
-.projects-more {
-    text-align: center;
-    margin: 35px 0;
-}
-
-.projects-more a {
-    color: #347f3d;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.projects-more a:hover {
-    text-decoration: underline;
 }
